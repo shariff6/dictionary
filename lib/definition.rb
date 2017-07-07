@@ -1,9 +1,9 @@
 class Definition
-  attr_reader = (:definition, :id)
   @@definitions = []
+  attr_reader  :definition, :id
   define_method(:initialize) do |definition|
     @definition = definition
-    @id = @@identification.lenght.+(1)
+    @id = @@definitions.length.+(1)
   end
   define_method(:save) do
     @@definitions.push(self)
@@ -14,7 +14,7 @@ class Definition
   define_singleton_method(:find) do |identity|
     found_definition = nil
     @@definitions.each do |definitions|
-      found_definition = identification if identificationto_i
+      found_definition = identification if identification.to_i
     end
     found_definition
   end
