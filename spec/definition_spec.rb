@@ -24,4 +24,11 @@ describe(".all") do
     expect(Definition.all).to(eq([]))
   end
 end
+describe(".clear") do
+  it "it emptys out the array" do
+    test_definition = Definition.new("play").save
+    test_definition.clear
+    expect(Definition.all).to(eq([]))
+  end
+end
 end
