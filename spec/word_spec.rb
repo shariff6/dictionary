@@ -32,4 +32,9 @@ describe(Word) do
       expect(Word.all).to(eq([]))
     end
   end
+  describe(".all") do
+    it "should be empty at first" do
+      expect(Word.all).to(eq([]))
+    end
+  end
 end
