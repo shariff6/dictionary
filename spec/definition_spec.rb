@@ -12,4 +12,11 @@ describe("#definition") do
     expect(test_definition.definition).to(eq("play"))
   end
 end
+describe("#save") do
+  it "saves the definiton to an array" do
+    test_definition = Definition.new("play")
+    test_definition.save()
+    expect(Definition.all).to(eq([test_definition]))
+  end
+end
 end
