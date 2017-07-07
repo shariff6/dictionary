@@ -19,4 +19,9 @@ describe("#save") do
     expect(Definition.all).to(eq([test_definition]))
   end
 end
+describe(".all") do
+  it "it is empty at first" do
+    expect(Definition.all).to(eq([]))
+  end
+end
 end
