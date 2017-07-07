@@ -37,4 +37,11 @@ describe(Word) do
       expect(Word.all).to(eq([]))
     end
   end
+  describe(".find") do
+    it "returns a word by its id" do
+      test_word = Word.new("happy")
+      test_word.save
+      expect(Word.find(test_word.id)).to(eq(test_word))
+    end
+  end
 end
