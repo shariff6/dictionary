@@ -19,4 +19,10 @@ describe(Word) do
       expect(Word.all).to(eq([test_word]))
     end
   end
+  describe("definitions") do
+    it "test if empty array of definition is initially returned" do
+      test_word = Word.new("happy")
+      expect(test_word.definitions).to(eq([]))
+    end
+  end
 end
