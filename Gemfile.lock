@@ -21,7 +21,6 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
-    sass (3.4.24)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -41,7 +40,6 @@ PLATFORMS
 
 DEPENDENCIES
   rspec
-  sass
   sinatra
   sinatra-contrib
 
