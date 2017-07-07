@@ -11,4 +11,7 @@ class Word
   define_method(:save) do
     @@words.push(self)
   end
+  define_method(:clear) do
+    @@words = []
+  end
 end
