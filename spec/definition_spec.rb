@@ -31,4 +31,11 @@ describe(".clear") do
     expect(Definition.all).to(eq([]))
   end
 end
+describe("#id") do
+  it "returns the id of a definition" do
+    test_definition = Definition.new("play")
+    test_definition.save
+    expect(test_definition.id).to(eq(1))
+  end
+end
 end
