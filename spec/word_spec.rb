@@ -44,4 +44,12 @@ describe(Word) do
       expect(Word.find(test_word.id)).to(eq(test_word))
     end
   end
+  describe("#add_definition") do
+    it "adds a definition to a specific word" do
+      test_word = Word.new("happy")
+      test_definition = Definition.new("a good feeling")
+      test_word.add_definition(test_definition)
+      expect(test_word.definitions).to(eq([test_definition]))
+    end
+  end
 end

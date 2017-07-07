@@ -15,8 +15,8 @@ class Word
   define_singleton_method(:clear) do
     @@words = []
   end
-  define_method(:add_definition) do |definiton|
-    @definitions.push(definition)
+  define_method(:add_definition) do |definitions|
+    @definitions.push(definitions)
   end
   define_singleton_method(:find) do |identity|
     found_word = nil
