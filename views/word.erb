@@ -2,9 +2,9 @@
 
   <ul>
     <% @word.definitions().each() do |definitions| %>
-  </li>  <%= definition.definition() %></li>
+  </li>  <%= definitions.definition() %></li>
     <% end %>
   </ul>
 
-  <a href="/words/<%= @word.id%>/words/new">Add a new word</a>
+  <a href="/word/<%= @word.id%>/definitions/new">Add a new definition</a>
   <a href="/">Return to Main Page</a>
