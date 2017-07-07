@@ -18,7 +18,7 @@ class Word
   define_method(:add_definition) do |definiton|
     @definitions.push(definition)
   end
-  define_method(:find) do |identity|
+  define_singleton_method(:find) do |identity|
     found_word = nil
     @@words.each do |word|
       found_word = word if word.id.eql?(identity.to_i)
