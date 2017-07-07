@@ -25,4 +25,11 @@ describe(Word) do
       expect(test_word.definitions).to(eq([]))
     end
   end
+  describe(".clear") do
+    it "emptys the array containing words" do
+      test_word = Word.new("happy").save
+      Word.clear
+      expect(Word.all).to(eq([]))
+    end
+  end
 end
