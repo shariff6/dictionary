@@ -14,4 +14,11 @@ class Word
   define_method(:clear) do
     @@words = []
   end
-end
+  define_method(:find) do |identity|
+    found_word = nil
+    @@words.each do |word|
+      found_word = word if word.id.eql?(identity.to_i)
+    end
+    found_word
+  end
+ end
